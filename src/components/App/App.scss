@@ -1,0 +1,175 @@
+@import '../../styles/_vars';
+@import '../../styles/_fonts';
+@import '../../styles/_start';
+
+body {
+  font-family: 'Formular', 'Roboto', sans-serif;
+}
+
+.menu__link {
+  padding: 10px 5px;
+  color: #656999;
+  font-size: 14px;
+  line-height: 1.14;
+  opacity: .7;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media ($m-xs) {
+    padding: 10px 19px;
+  }
+}
+
+.layout {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.layout__sidebar {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  bottom: 27px;
+  left: 0;
+  width: 388px;
+  max-width: 100%;
+
+  &.is-hide {
+    display: none;
+  }
+}
+
+.layout__content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 50px 0 27px;
+
+  @media ($m-l) {
+    left: 388px;
+    width: calc(100% - 388px);
+  }
+}
+
+.page {
+  max-height: 100%;
+  overflow: auto;
+  padding: 20px 16px 40px 10px;
+
+  @media ($m-m) {
+    padding: 54px 24px 54px 121px;
+  }
+}
+
+.page__title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.page__description {
+  width: 650px;
+  max-width: 100%;
+  margin-top: 13px;
+  color: $c-text;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.page__body {
+  margin-top: 60px;
+}
+
+.benefits {
+  margin: -34px 0 0 -10px;
+
+  @media ($m-s) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: -68px 0 0 -10px;
+  }
+}
+
+.benefits__item {
+  padding: 34px 0 0 10px;
+
+  @media ($m-s) {
+    width: 50%;
+    padding: 68px 0 0 10px;
+  }
+}
+
+.benefit {
+  position: relative;
+  text-align: center;
+
+  @media ($m-m) {
+    text-align: left;
+  }
+}
+
+.benefit__icon {
+  color: #2d6ae4;
+
+  & svg {
+    fill: currentColor
+  }
+
+  @media ($m-m) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(calc(-100% - 12px), -4px, 0);
+  }
+}
+
+.benefit__title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.benefit__text {
+  width: 316px;
+  max-width: 100%;
+  margin: 4px auto 0;
+  color: $c-text;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media ($m-m) {
+    margin: 4px 0 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
